@@ -1,0 +1,58 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAC926;;
+}
+
+.burger-menu {
+    text-align: center;
+}
+
+.fa-bars {
+    background-color: #1259c3;
+    color: #ebebeb;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: auto;
+    padding: 10px;
+}
+
+footer {
+    background-color: white;
+}
+
+h3.footer {
+    text-align: center;
+}
+
+.ul-li {
+    padding: 0%;
+}
+
+.titulo-footer {
+    font-weight: bold;
+    text-align: center;
+    color: #666;
+}
+
+.texto-footer {
+    text-align: center;
+    color: #666;
+    font-weight: normal;
+}
+
+.i {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #1259c3;
+}
+
+.titulofinal-footer {
+    font-weight: lighter;
+    text-align: center;
+    color: #666;
+}
+
+.titulo-compra {
+    text-align: center;
+}
