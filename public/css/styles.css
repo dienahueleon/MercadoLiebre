@@ -1,6 +1,38 @@
-body {
+* {
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    background-color: #EAC926;;
+}
+
+/*Header*/
+header {
+    background-color: #EAC926;
+}
+.img-mercadolibre {
+    width: 200px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.barra-de-busqueda {
+    padding-left: 15px;
+    width: 300px;
+}
+
+.fa-magnifying-glass {
+    background-color: white;
+    padding: 2px;
+    border: solid 1px black;
+    position: relative;
+    top: 5px;
+    left: 15px;
+}
+.titulo-compra {
+    text-align: center;
+}
+
+.ul-li {
+    padding: 0%;
 }
 
 .burger-menu {
@@ -15,17 +47,40 @@ body {
     margin: auto;
     padding: 10px;
 }
+/*Fin Header*/
+
+/*Main*/
+main {
+    background-color: #EAC926;
+}
+.titulares {
+    font-size: 24px;
+}
+
+.precios {
+    font-size: 18px;
+}
+
+.descuentos {
+    font-size: 16px;
+}
+
+.descripcion {
+    font-size: 16px;
+}
+/*Fin Main*/
+
+/*Footer*/
 
 footer {
     background-color: white;
 }
 
-h3.footer {
+.i {
+    font-size: 2em;
+    margin-bottom: 10px;
     text-align: center;
-}
-
-.ul-li {
-    padding: 0%;
+    color: #1259c3;
 }
 
 .titulo-footer {
@@ -40,19 +95,9 @@ h3.footer {
     font-weight: normal;
 }
 
-.i {
-    font-size: 2em;
-    margin-bottom: 10px;
-    text-align: center;
-    color: #1259c3;
-}
-
 .titulofinal-footer {
     font-weight: lighter;
-    text-align: center;
+    text-align: left;
     color: #666;
 }
 
-.titulo-compra {
-    text-align: center;
-}
