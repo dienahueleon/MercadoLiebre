@@ -6,6 +6,7 @@
 /*Header*/
 header {
     background-color: #EAC926;
+    padding-bottom: 15px;
 }
 .img-mercadolibre {
     width: 200px;
@@ -31,8 +32,14 @@ header {
     text-align: center;
 }
 
-.ul-li {
+.site {
     padding: 0%;
+    display: none;
+}
+
+.login {
+    padding: 0%;
+    display: none;  
 }
 
 .burger-menu {
@@ -51,10 +58,39 @@ header {
 
 /*Main*/
 main {
-    background-color: #EAC926;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-venta {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 90vw;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+article {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    background-color: white;
+    width: 90vw;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.fa-truck {
+    color: #39b54a;
 }
 .titulares {
     font-size: 24px;
+    margin: 10px;
+    color: #666;
+    font-weight: bold;
 }
 
 .precios {
@@ -63,10 +99,13 @@ main {
 
 .descuentos {
     font-size: 16px;
+    color: #39b54a;
 }
 
 .descripcion {
     font-size: 16px;
+    color: #666;
+    display: none;
 }
 /*Fin Main*/
 
@@ -74,9 +113,10 @@ main {
 
 footer {
     background-color: white;
+    padding-top: 15px;
 }
 
-.i {
+.icon-footer {
     font-size: 2em;
     margin-bottom: 10px;
     text-align: center;
@@ -99,5 +139,25 @@ footer {
     font-weight: lighter;
     text-align: left;
     color: #666;
+}
+
+@media (min-width: 361px) {
+/*TABLET*/
+.descripcion {
+    display: block;
+}
+
+.site, .login {
+    display: block;
+    padding-left: 15px;
+}
+
+.burger-menu {
+    display: none;
+}
+}
+
+@media (min-width: 769) {
+    
 }
 
