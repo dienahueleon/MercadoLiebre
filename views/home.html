@@ -15,54 +15,66 @@
 
 <body>
     <header>
-        <div class="logo-barra">
-        <img class="img-mercadolibre" src="/images/logo-mercado-liebre.svg" alt="">
-            <label for="search"><i class="barra-de-busqueda"></i></label>
-            <input type="text" placeholder="Buscar productos, marcas">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div>
-            <h4 class="titulo-compra"><i class="fa-solid fa-hand-holding-dollar"></i> Compra en cuotas y sin tarjeta de
-                credito</h4>
-        </div>
-        <div class="site-login">
-        <nav>
-            <a href="">Ofertas </a>
-            <a href="">Tiendas Oficiales </a>
-            <a href="">Vender </a>
-            <a href="">Ayuda </a>
-        </nav>
-        <nav>
-            <a href=""> Creá tu cuenta<i class="fa-sharp fa-solid fa-id-card"></i></a>
-            <a href=""> Ingresá<i class="fa-solid fa-right-to-bracket"></i></a>
-            <a href=""> Mis compras<i class="fa-sharp fa-solid fa-basket-shopping"></i></a>
-        </nav>
-    </div>
+        <section class="logo-barra">
+            <div class="img-mercadolibre">
+                <img src="/images/logo-mercado-liebre.svg" alt="">
+            </div>
+            <div class="barra-container">
+                <form action="" method="post">
+                    <input type="text" placeholder="Buscar productos, marcas">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <div class="titulo-container">
+                <h4 class="titulo-compra"><i class="fa-solid fa-hand-holding-dollar"></i> Compra en cuotas y sin tarjeta
+                    de credito</h4>
+            </div>
+        </section>
+        <section class="site-login">
+            <nav class="navegador-1">
+                <ul type="none" class="lista">
+                    <li><a href="">Ofertas</a></li>
+                    <li><a href="">Tiendas Oficiales</a></li>
+                    <li><a href="">Vender</a></li>
+                    <li><a href="">Ayuda</a></li>
+                </ul>
+            </nav>
+            <nav class="navegador-2">
+                <ul type="none" class="lista">
+                    <li><a href="">Creá tu cuenta<i class="fa-sharp fa-solid fa-id-card"></i></a></li>
+                    <li><a href="">Ingresá<i class="fa-solid fa-right-to-bracket"></i></a></li>
+                    <li><a href="">Mis compras<i class="fa-sharp fa-solid fa-basket-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </section>
         <div class="burger-menu">
             <i class="fas fa-bars"></i>
         </div>
     </header>
+    <div class="banner">
+        <img src="/images/img-home-banner.jpg" alt="">
+    </div>
     <main>
         <section>
+            <h3 class="titulares">Basado en tu última visita</h3>
 
-            <h3 class="titulares">Sección: Basado en tu última visita</h3>
-            <div>
-                <img class="img-venta" src="/images/img-cafetera-moulinex.jpg" alt="Cafetera Molunex">
+            <div class="articulo-principal">
+                <div>
+                    <img class="img-venta" src="/images/img-cafetera-moulinex.jpg" alt="Cafetera Molunex">
+                </div>
+                <div>
+                    <i class="fa-solid fa-truck"></i>
+                </div>
+                <div>
+                    <h4 class="precios">$6770</h4>
+                </div>
+                <div>
+                    <h4 class="descuentos">40% OFF</h4>
+                </div>
+                <div>
+                    <h3 class="descripcion">Cafetera Moulinex</h3>
+                </div>
             </div>
-            <article>
-                <div>
-                <i class="fa-solid fa-truck"></i>
-                </div>
-                <div>
-                <h4 class="precios">$6770</h4>
-                </div>
-                <div>
-                <h4 class="descuentos">40% OFF</h4>
-                </div>
-                <div>
-                <h3 class="descripcion">Cafetera Moulinex</h3>
-            </div>
-            </article>
 
             <div>
                 <img class="img-venta" src="/images/img-macbook-pro-2019.jpg" alt="Cafetera Molunex">
