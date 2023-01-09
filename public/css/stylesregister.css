@@ -7,7 +7,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    background-color: #ebebeb;
+    background-color: white;
 }
 
 a {
@@ -89,93 +89,111 @@ header {
 
 /*Fin Header*/
 
-.banner img {
-    width: 100%;
-}
+/*main*/
 
-/*Main*/
 main {
-    width: 90%;
+    width: 100%;
     margin: auto;
-    padding-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.titulares {
-    font-size: 24px;
-    color: #666;
-    font-weight: bold;
-    padding-top: 2%;
+.formulario-cont {
+    background-color: #ebebeb;
+    width: 80%;
+    text-align: center;
+    padding-top: 3%;
+    margin-top: 7%;
+    padding-bottom: 3%;
+    margin-bottom: 7%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.items-form {
+    padding: 3%;
+    display: flex;
+}
+
+.items-radio {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.items-check {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10%;
     padding-bottom: 2%;
 }
 
-.articulo-principal {
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
-    background-color: white;
-}
-
-.img-venta img {
+.barras-form {
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
     width: 90%;
-}
-
-.img-venta {
-    text-align: center;
-}
-
-.camion {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.fa-truck {
-    color: #39b54a;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
     height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
+    padding-left: 10px;
 }
 
+.titulos-form {
+    text-align: left;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+}
 
-.precio-descuento {
+.titulos-foto {
+    text-align: left;
+    padding-top: 3%;
+    padding-left: 5%;
+}
+
+.items-form input {
+    padding-left: 5%;
+}
+.items-button {
+    padding-top: 3%;
     display: flex;
+    justify-content: space-evenly;
 }
 
-.precio-cont {
-    width: 30%;
+.button-blue {
+    background-color: #1259c3;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
 }
 
-.descuento-cont {
-    width: 70%;
+.button-white {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
 }
 
-.precios {
-    font-size: 18px;
-}
 
-.descuentos {
-    font-size: 16px;
-    color: #39b54a;
-}
 
-.descripcion {
-    font-size: 16px;
-    color: #666;
-    display: none;
-}
-
-/*Fin Main*/
+/*Fin main*/
 
 /*Footer*/
 
 footer {
     background-color: white;
     padding-top: 15px;
+    width: 100%;
+    border-top: 2px solid #ebebeb;
 }
 
 .icon-footer {
@@ -212,13 +230,15 @@ footer {
     padding-bottom: 3%;
 }
 
+/*Fin footer*/
 
 @media (min-width: 361px) {
     /*TABLET*/
 
     /*Header*/
     .img-mercadolibre,
-    .barra-container, .titulo-container {
+    .barra-container,
+    .titulo-container {
         width: 33%;
     }
 
@@ -254,30 +274,13 @@ footer {
         display: none;
     }
 
-    /*Main*/
-
-    .articulos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    /*main*/
+    .formulario-cont {
+        max-width: 400px;
     }
-
-    .articulo-principal {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        width: 40%;
-    }
-
-    .descuentos {
-        text-align: center;
-    }
-    
-    .descripcion {
-        display: block;
-        padding-top: 7%;
-    }
+    /*Fin main*/
 
     /*footer*/
-
     .icon-footer {
         padding-top: 3%;
     }
@@ -285,31 +288,27 @@ footer {
     .titulofinal-footer {
         padding-top: 3%;
     }
-
-        /*Fin footer*/
+    /*fin footer*/
 }
 
-
 @media (min-width: 769px) {
-    /*Laptop*/
+        /*main*/
 
-    /*Header*/
+    .formulario-cont {
+        padding-top: 2%;
+        margin-top: 4%;
+        padding-bottom: 2%;
+        margin-bottom: 4%;
+    }
+        /*Fin main*/
 
-    /*Main*/
-
-    .articulo-principal {
-        width: 20%;
+            /*footer*/
+    .icon-footer {
+        padding-top: 3%;
     }
 
-        /*footer*/
-
-        .icon-footer {
-            padding-top: 1%;
-        }
-    
-        .titulofinal-footer {
-            padding-top: 1%;
-            padding-bottom: 1%;
-
-        }
+    .titulofinal-footer {
+        padding-top: 3%;
+    }
+    /*fin footer*/
 }

@@ -7,7 +7,6 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    background-color: #ebebeb;
 }
 
 a {
@@ -89,93 +88,72 @@ header {
 
 /*Fin Header*/
 
-.banner img {
-    width: 100%;
-}
+/*main*/
 
-/*Main*/
 main {
-    width: 90%;
+    width: 100%;
     margin: auto;
-    padding-bottom: 3%;
-}
-
-.titulares {
-    font-size: 24px;
-    color: #666;
-    font-weight: bold;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-
-.articulo-principal {
-    margin: 10px;
     display: flex;
     flex-direction: column;
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
-    background-color: white;
+    align-items: center;
+    background-color: #ebebeb;
+
 }
 
-.img-venta img {
-    width: 90%;
+.formulario-cont {
+    width: 100%;
+    padding-top: 3%;
+    margin-top: 5%;
+    padding-bottom: 3%;
+    margin-bottom: 5%;
+    border-radius: 5px;
 }
 
-.img-venta {
+.form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.items-form {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 100%;
     text-align: center;
 }
 
-.camion {
-    display: flex;
-    justify-content: flex-end;
+.button-form {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 100%;
+    text-align: center;
 }
 
-.fa-truck {
-    color: #39b54a;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
+.barra-form {
+    border-radius: 5px;
+    border: none;
     height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
+    padding-left: 10px;
+    width: 80%;
 }
 
-
-.precio-descuento {
-    display: flex;
+.barra-boton {
+    background-color: #1259c3;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 30px;
+    width: 80%;
 }
 
-.precio-cont {
-    width: 30%;
-}
-
-.descuento-cont {
-    width: 70%;
-}
-
-.precios {
-    font-size: 18px;
-}
-
-.descuentos {
-    font-size: 16px;
-    color: #39b54a;
-}
-
-.descripcion {
-    font-size: 16px;
-    color: #666;
-    display: none;
-}
-
-/*Fin Main*/
+/*Main*/
 
 /*Footer*/
 
 footer {
     background-color: white;
     padding-top: 15px;
+    width: 100%;
 }
 
 .icon-footer {
@@ -212,9 +190,11 @@ footer {
     padding-bottom: 3%;
 }
 
+/*Fin footer*/
+
 
 @media (min-width: 361px) {
-    /*TABLET*/
+    /*Tablet*/
 
     /*Header*/
     .img-mercadolibre,
@@ -253,31 +233,15 @@ footer {
     .burger-menu {
         display: none;
     }
+    /*Fin header*/
 
-    /*Main*/
-
-    .articulos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    /*main*/
+    .formulario-cont {
+        max-width: 600px;
     }
-
-    .articulo-principal {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        width: 40%;
-    }
-
-    .descuentos {
-        text-align: center;
-    }
-    
-    .descripcion {
-        display: block;
-        padding-top: 7%;
-    }
+    /*Fin main*/
 
     /*footer*/
-
     .icon-footer {
         padding-top: 3%;
     }
@@ -285,24 +249,14 @@ footer {
     .titulofinal-footer {
         padding-top: 3%;
     }
+    /*Fin footer*/
 
-        /*Fin footer*/
 }
-
 
 @media (min-width: 769px) {
     /*Laptop*/
 
-    /*Header*/
-
-    /*Main*/
-
-    .articulo-principal {
-        width: 20%;
-    }
-
         /*footer*/
-
         .icon-footer {
             padding-top: 1%;
         }
@@ -310,6 +264,7 @@ footer {
         .titulofinal-footer {
             padding-top: 1%;
             padding-bottom: 1%;
+        } 
+        /*Fin footer*/
 
-        }
-}
+    }
