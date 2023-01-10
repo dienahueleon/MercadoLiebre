@@ -29,18 +29,16 @@ header {
     flex-wrap: wrap;
 }
 
-.img-mercadolibre,
-.barra-container {
+.img-mercadolibre {
+    padding-left: 13px;
     width: 50%;
     padding-top: 5%;
 }
 
-.img-mercadolibre {
-    padding-left: 13px;
-}
-
 .barra-container {
     padding-top: 7%;
+    width: 50%;
+    padding-top: 5%;
     text-align: center;
 }
 
@@ -51,6 +49,16 @@ header {
     width: 30vw;
     height: 30px;
     padding-left: 10px;
+}
+
+.boton-cont {
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    width: 25px;
+    height: 30px;
+    position: relative;
+    right: 3%
 }
 
 .fa-magnifying-glass {
@@ -113,9 +121,8 @@ main {
     display: flex;
     flex-direction: column;
     border-top: 1px solid #ebebeb;
-    padding: 15px;
     background-color: white;
-    transition: box-shadow 0.5s
+    transition: box-shadow 1000ms;
 }
 
 .articulo-principal:hover {
@@ -128,11 +135,15 @@ main {
 
 .img-venta {
     text-align: center;
+    border-bottom: 1px solid #ebebeb;
 }
 
 .camion {
     display: flex;
     justify-content: flex-end;
+    position: relative;
+    right: 7%;
+    bottom: 5%;
 }
 
 .fa-truck {
@@ -144,18 +155,17 @@ main {
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-name: girando;
-    animation-duration: 1000ms
+    transition: rotate() 1000ms;
 }
 
-@keyframes girando {
-
+.fa-truck:hover {
+    -webkit-transform: rotate(360deg);
+    transition: 1s ease;
 }
 
 .precio-descuento {
     display: flex;
+    padding-left: 7%;
 }
 
 .precio-cont {
@@ -178,12 +188,17 @@ main {
 .descripcion {
     font-size: 16px;
     color: #666;
-    display: none;
-    transition: display 0.5s
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 7%;
+    opacity: 0;
+    transition: opacity 0.5s
 }
+
 .descripcion:hover {
-    display: block;
+    opacity: 1;
 }
+
 /*Fin Main*/
 
 /*Footer*/
@@ -199,6 +214,11 @@ footer {
     text-align: center;
     color: #1259c3;
     padding-top: 7%;
+    transition: color 500ms;
+}
+
+.icon-footer:hover {
+    color: #EAC926;
 }
 
 .titulo-footer {
@@ -232,8 +252,19 @@ footer {
     /*TABLET*/
 
     /*Header*/
-    .img-mercadolibre,
-    .barra-container, .titulo-container {
+
+    .img-mercadolibre {
+        padding-top: 3%;
+        width: 33%
+    }
+
+    .barra-container {
+        padding-top: 5%;
+        width: 33%;
+    }
+
+    .titulo-container {
+        padding-top: 4%;
         width: 33%;
     }
 
@@ -241,8 +272,9 @@ footer {
         width: 25vw;
     }
 
-    .titulo-container {
-        padding-top: 5%;
+    .boton-cont {
+        position: relative;
+        right: 0%
     }
 
     .site-login {
@@ -278,17 +310,16 @@ footer {
     }
 
     .articulo-principal {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 40%;
     }
 
     .descuentos {
         text-align: center;
     }
-    
+
     .descripcion {
-        display: block;
-        padding-top: 7%;
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
 
     /*footer*/
@@ -301,7 +332,7 @@ footer {
         padding-top: 3%;
     }
 
-        /*Fin footer*/
+    /*Fin footer*/
 }
 
 
@@ -309,22 +340,33 @@ footer {
     /*Laptop*/
 
     /*Header*/
-
+    
+    .titulo-container {
+        padding-top: 1%;
+    }
     /*Main*/
 
     .articulo-principal {
         width: 20%;
     }
 
-        /*footer*/
+    .descripcion {
+        padding-top: 4%;
+        padding-bottom: 3%;
+    }
 
-        .icon-footer {
-            padding-top: 1%;
-        }
-    
-        .titulofinal-footer {
-            padding-top: 1%;
-            padding-bottom: 1%;
+    /*footer*/
 
-        }
+    .footer-cont {
+        display: flex;
+    }
+
+    .icon-footer {
+        padding-top: 1%;
+    }
+
+    .titulofinal-footer {
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
 }

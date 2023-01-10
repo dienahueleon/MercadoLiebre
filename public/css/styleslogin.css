@@ -52,6 +52,16 @@ header {
     padding-left: 10px;
 }
 
+.boton-cont {
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    width: 25px;
+    height: 30px;
+    position: relative;
+    right: 3%
+}
+
 .fa-magnifying-glass {
     background-color: white;
     color: grey;
@@ -122,13 +132,6 @@ main {
     text-align: center;
 }
 
-.button-form {
-    padding-top: 3%;
-    padding-bottom: 3%;
-    width: 100%;
-    text-align: center;
-}
-
 .barra-form {
     border-radius: 5px;
     border: none;
@@ -137,13 +140,25 @@ main {
     width: 80%;
 }
 
+.button-form {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 100%;
+    text-align: center;
+}
+
 .barra-boton {
-    background-color: #1259c3;
+    background-color:#3483fa;
     color: white;
     font-weight: bold;
     border-radius: 5px;
     height: 30px;
     width: 80%;
+    transition: background-color 500ms;
+}
+
+.barra-boton:hover {
+    background-color: #0022AA;
 }
 
 /*Main*/
@@ -162,6 +177,11 @@ footer {
     text-align: center;
     color: #1259c3;
     padding-top: 7%;
+    transition: color 500ms;
+}
+
+.icon-footer:hover {
+    color: #EAC926;
 }
 
 .titulo-footer {
@@ -197,13 +217,29 @@ footer {
     /*Tablet*/
 
     /*Header*/
-    .img-mercadolibre,
-    .barra-container, .titulo-container {
+
+    .img-mercadolibre {
+        padding-top: 3%;
+        width: 33%
+    }
+
+    .barra-container {
+        padding-top: 5%;
+        width: 33%;
+    }
+
+    .titulo-container {
+        padding-top: 4%;
         width: 33%;
     }
 
     .barra-container input {
         width: 25vw;
+    }
+
+    .boton-cont {
+        position: relative;
+        right: 0%
     }
 
     .titulo-container {
@@ -256,7 +292,16 @@ footer {
 @media (min-width: 769px) {
     /*Laptop*/
 
+    .titulo-container {
+        padding-top: 1%;
+    }
+
         /*footer*/
+
+        .footer-cont {
+            display: flex;
+        }
+        
         .icon-footer {
             padding-top: 1%;
         }

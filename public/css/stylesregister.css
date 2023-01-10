@@ -53,6 +53,16 @@ header {
     padding-left: 10px;
 }
 
+.boton-cont {
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    width: 25px;
+    height: 30px;
+    position: relative;
+    right: 3%
+}
+
 .fa-magnifying-glass {
     background-color: white;
     color: grey;
@@ -134,6 +144,11 @@ main {
     padding-bottom: 2%;
 }
 
+.radio-check {
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
 .barras-form {
     border-radius: 5px;
     border: none;
@@ -159,6 +174,7 @@ main {
 .items-form input {
     padding-left: 5%;
 }
+
 .items-button {
     padding-top: 3%;
     display: flex;
@@ -166,12 +182,17 @@ main {
 }
 
 .button-blue {
-    background-color: #1259c3;
+    background-color:#3483fa;
     color: white;
     font-weight: bold;
     border-radius: 5px;
     height: 30px;
     width: 100px;
+    transition: background-color 500ms;
+}
+
+.button-blue:hover {
+    background-color: #0022AA;
 }
 
 .button-white {
@@ -181,9 +202,13 @@ main {
     border-radius: 5px;
     height: 30px;
     width: 100px;
+    transition: background-color 500ms;
+    border: 1px solid #666;
 }
 
-
+.button-white:hover {
+    background-color: #ebebeb;
+}
 
 /*Fin main*/
 
@@ -202,6 +227,11 @@ footer {
     text-align: center;
     color: #1259c3;
     padding-top: 7%;
+    transition: color 500ms;
+}
+
+.icon-footer:hover {
+    color: #EAC926;
 }
 
 .titulo-footer {
@@ -236,14 +266,29 @@ footer {
     /*TABLET*/
 
     /*Header*/
-    .img-mercadolibre,
-    .barra-container,
+
+    .img-mercadolibre {
+        padding-top: 3%;
+        width: 33%
+    }
+
+    .barra-container {
+        padding-top: 5%;
+        width: 33%;
+    }
+
     .titulo-container {
+        padding-top: 4%;
         width: 33%;
     }
 
     .barra-container input {
         width: 25vw;
+    }
+
+    .boton-cont {
+        position: relative;
+        right: 0%
     }
 
     .titulo-container {
@@ -278,6 +323,7 @@ footer {
     .formulario-cont {
         max-width: 400px;
     }
+
     /*Fin main*/
 
     /*footer*/
@@ -288,11 +334,17 @@ footer {
     .titulofinal-footer {
         padding-top: 3%;
     }
+
     /*fin footer*/
 }
 
 @media (min-width: 769px) {
-        /*main*/
+
+    .titulo-container {
+        padding-top: 1%;
+    }
+
+    /*main*/
 
     .formulario-cont {
         padding-top: 2%;
@@ -300,15 +352,23 @@ footer {
         padding-bottom: 2%;
         margin-bottom: 4%;
     }
-        /*Fin main*/
 
-            /*footer*/
+    /*Fin main*/
+
+    /*footer*/
+
+    .footer-cont {
+        display: flex;
+    }
+
     .icon-footer {
-        padding-top: 3%;
+        padding-top: 1%;
     }
 
     .titulofinal-footer {
-        padding-top: 3%;
-    }
+        padding-top: 1%;
+        padding-bottom: 1%;
+    } 
+
     /*fin footer*/
 }
